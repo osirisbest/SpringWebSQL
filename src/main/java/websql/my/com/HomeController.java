@@ -30,7 +30,13 @@ public class HomeController {
 
 		String formattedDate = dateFormat.format(date);
 
-		model.addAttribute("serverTime", formattedDate);
+		// ClassPathXmlApplicationContext ac = new
+		// ClassPathXmlApplicationContext("context.xml");
+		// SQLiteDAO sqLiteDAO = (SQLiteDAO) ac.getBean("dataSource");
+
+		// SQLiteDAO dao = new SQLiteDAO();
+		// record rec = sqLiteDAO.getRecordbyID(3209);
+		model.addAttribute("serverTime", 252);
 
 		return "home";
 	}
